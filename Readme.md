@@ -3,11 +3,11 @@
 
 <h2>CREATE YOUR VIRTUAL ENVIRONMENT</h2>
 
- Install conda on your system
+Install conda on your system
 
-  follow steps at https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+- Follow steps at: https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
- Install everything else 
+Install everything else 
 
        conda create -n p_1
        conda activate p_1
