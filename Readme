@@ -1,8 +1,7 @@
 
-CAD Design, Meshing, Simulation, Analysis as Code
+#CAD Design, Meshing, Simulation, Analysis as Code
 
-
-CREATE YOUR VIRTUAL ENVIRONMENT
+##CREATE YOUR VIRTUAL ENVIRONMENT
 
  -> Install conda on your system
         follow steps at https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
@@ -15,13 +14,13 @@ CREATE YOUR VIRTUAL ENVIRONMENT
         conda install gmsh pygmsh
         conda install -c conda-forge fenics-dolfinx mpich pyvista
         cd [anaconda3_install_folder]\envs\[p_1]\bin
-        #before next step, make sure p_1 conda environment is activated
+        before next step, make sure p_1 conda environment is activated
         pip install cadquery
-        #install cadquery through pip into p_1 conda environment
-        #cadquery and fenics has some dependecy conflict in conda packages
-        #cadquery's pip package solves this problem
+        install cadquery through pip into p_1 conda environment
+        cadquery and fenics has some dependecy conflict in conda packages
+        cadquery's pip package solves this problem
 
-WORKFLOW
+##WORKFLOW
 
     Design Modell with cadquery
     Mesh the Modell with Structured (Transfinite) Cubic Mesh
