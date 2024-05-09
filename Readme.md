@@ -5,7 +5,7 @@
 
  Install conda on your system
 
-       follow steps at https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+  follow steps at https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
  Install everything else 
 
