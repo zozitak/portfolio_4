@@ -20,6 +20,7 @@ Install everything else
        #install cadquery through pip into p_1 conda environment
        #cadquery and fenics has some dependecy conflict in conda packages
        #cadquery's pip package solves this problem
+       cd [to the project folder]
 
 <h2>WORKFLOW</h2>
 
