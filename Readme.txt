@@ -1,13 +1,6 @@
-NAME
 
 CAD Design, Meshing, Simulation, Analysis as Code
 
-DESCRIPTION
-
-State of the art CAD design softwares don't come with version control system. 
-This aproach attempts to solve this problem on a maintainable way. 
-Additionaly gives the chance to use the STEP AP214 standard file format, 
-to pack extra manufacturing & simulation data into CAD models.
 
 CREATE YOUR VIRTUAL ENVIRONMENT
 
