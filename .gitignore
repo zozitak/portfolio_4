@@ -2,4 +2,4 @@
 !.gitignore
 !LICENSE
 !Readme.md
-!cqplugin/export_step.py
+!**export_step.py
