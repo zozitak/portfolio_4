@@ -31,7 +31,7 @@ CREATE YOUR VIRTUAL ENVIRONMENT
 WORKFLOW
 
     Design Modell with cadquery
-    Mesh the Modell Structured (Transfinite) Cubic Mesh
+    Mesh the Modell with Structured (Transfinite) Cubic Mesh
     Simulate Linear Elastic Beam based on https://fenicsproject.org/pub/tutorial/html/._ftut1008.html 
     Analize with Paraview
     Save results in the STEP file
