@@ -23,8 +23,8 @@
 
 <h2>WORKFLOW</h2>
 
-       Design Modell with cadquery
-       Mesh the Modell with Structured (Transfinite) Cubic Mesh
-       Simulate Linear Elastic Beam based on https://fenicsproject.org/pub/tutorial/html/._ftut1008.html 
-       Analize with Paraview
-       Save results in the STEP file
+1. Design Modell with cadquery
+2. Mesh the Modell with Structured (Transfinite) Cubic Mesh
+3. Simulate Linear Elastic Beam based on https://fenicsproject.org/pub/tutorial/html/._ftut1008.html 
+4. Analize with Paraview
+5. Save results in the STEP file
