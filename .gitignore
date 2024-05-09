@@ -1,5 +1,1 @@
-*
-!.gitignore
-!LICENSE
-!Readme.md
-!main.py
+*.code-workspace
