@@ -2,5 +2,5 @@
 !.gitignore
 !LICENSE
 !Readme.md
-!cqplugin/**
+!cqplugin/export_step.py
 !tests/**
