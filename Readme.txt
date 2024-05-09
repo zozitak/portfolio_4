@@ -28,3 +28,10 @@ CREATE YOUR VIRTUAL ENVIRONMENT
         #cadquery and fenics has some dependecy conflict in conda packages
         #cadquery's pip package solves this problem
 
+WORKFLOW
+
+    Design Modell with cadquery
+    Mesh the Modell Structured (Transfinite) Cubic Mesh
+    Simulate Linear Elastic Beam based on https://fenicsproject.org/pub/tutorial/html/._ftut1008.html 
+    Analize with Paraview
+    Save results in the STEP file
