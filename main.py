@@ -20,10 +20,11 @@ def main() -> int:
     g = gamma
 
     # create cadquery model
-    cad_model = cadquery.Workplane("xy").box(L, W, W)
-
+    cad_model = cadquery.Workplane("xy").box(L, W, W).toOCC()
 
     # mesh it 
+    
+
     # simulation
     # analysis
     # saving
