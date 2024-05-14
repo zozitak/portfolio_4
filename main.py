@@ -23,7 +23,10 @@ def main() -> int:
     cad_model = cadquery.Workplane("xy").box(L, W, W).toOCC()
 
     # mesh it 
-    
+    gmsh.initialize()
+    gmsh.model.occ.importShapesNativePointer(cad_model._address())
+    gmsh.model.occ.synchronize()
+    gmsh.finalize()
 
     # simulation
     # analysis
