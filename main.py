@@ -1,6 +1,6 @@
 # main.py
 
-import cadquery as cad
+import cadquery
 import gmsh
 import dolfinx
 import sys
@@ -10,7 +10,7 @@ from cqplugin.export_step import export_step_ap214
 def main() -> int:
 
     # Scaled variables
-    L = 1; W = 0.2
+    L = 1.0; W = 0.2
     mu = 1
     rho = 1
     delta = W/L
@@ -19,12 +19,15 @@ def main() -> int:
     lambda_ = beta
     g = gamma
 
-    # create cq model
+    # create cadquery model
+    cad_model = cadquery.Workplane("xy").box(L, W, W)
+
 
     # mesh it 
     # simulation
     # analysis
     # saving
+
     return 0 
 
 if __name__ == '__main__':
