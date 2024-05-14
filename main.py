@@ -24,7 +24,7 @@ def main() -> int:
     # mesh it 
     # simulation
     # analysis
-    # saveing
+    # saving
     return 0 
 
 if __name__ == '__main__':
