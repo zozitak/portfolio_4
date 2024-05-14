@@ -1,6 +1,8 @@
 # main.py
 
-import cadquery as cq
+import cadquery as cad
+import gmsh
+import dolfinx
 import sys
 
 from cqplugin.export_step import export_step_ap214
