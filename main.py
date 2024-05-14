@@ -20,11 +20,12 @@ def main() -> int:
     g = gamma
 
     # create cadquery model
-    cad_model = cadquery.Workplane("xy").box(L, W, W).toOCC()
+    cad_model = cadquery.Workplane("xy").box(L, W, W)
+    cad_exchange = cad_model.toOCC()
 
     # mesh it 
     gmsh.initialize()
-    gmsh.model.occ.importShapesNativePointer(cad_model._address())
+    gmsh.model.occ.importShapesNativePointer(cad_exchange._address())
     gmsh.model.occ.synchronize()
     gmsh.finalize()
 
