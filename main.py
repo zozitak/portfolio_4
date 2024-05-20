@@ -2,7 +2,9 @@
 
 import cadquery
 import gmsh
-import dolfinx
+from dolfinx.io import gmshio
+from dolfinx.fem.petsc import LinearProblem
+from mpi4py import MPI
 import sys
 
 from cqplugin.export_step import export_step_ap214
@@ -27,9 +29,14 @@ def main() -> int:
     gmsh.initialize()
     gmsh.model.occ.importShapesNativePointer(cad_exchange._address())
     gmsh.model.occ.synchronize()
-    gmsh.finalize()
+    
 
     # simulation
+    gmsh_model_rank = 0
+    mesh_comm = MPI.COMM_WORLD
+    domain, cell_markers, facet_markers = gmshio.model_to_mesh(gmsh.model, mesh_comm, gmsh_model_rank, gdim=gdim)
+    gmsh.finalize()
+
     # analysis
     # saving
 
