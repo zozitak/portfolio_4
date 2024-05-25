@@ -25,7 +25,13 @@ Install everything else
 <h2>WORKFLOW</h2>
 
 1. Design Modell with cadquery
+
+<img src="/assets/cad.png">
+
 2. Mesh the Modell with Structured (Transfinite) Cubic Mesh
+
+<img src="/assets/gmsh.png">
+
 3. Simulate Linear Elastic Beam based on https://fenicsproject.org/pub/tutorial/html/._ftut1008.html 
 
        Scenario:
@@ -45,4 +51,7 @@ Install everything else
        deformation the material follows linear elasticity.
 
 4. Analize with Paraview
+
+<img src="/assets/paraview.png">
+
 5. Save results in the STEP file
