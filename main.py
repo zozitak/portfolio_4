@@ -42,6 +42,8 @@ for surface in [1,2,3,4,5,6]:
 for volume in [1]:
     gmsh.model.mesh.setTransfiniteVolume(volume,[1,2,4,3,5,6,8,7])
 
+gmsh.model.addPhysicalGroup(3, [1], 1, "volume")
+
 gmsh.model.mesh.generate(3)
 
 # simulation
@@ -55,7 +57,7 @@ g = gamma
 
 gmsh_model_rank = 0
 mesh_comm = MPI.COMM_WORLD
-domain, cell_markers, facet_markers = gmshio.model_to_mesh(gmsh.model, mesh_comm, gmsh_model_rank, gdim=3)
+domain, cell_markers, facet_markers = gmshio.model_to_mesh(gmsh.model, mesh_comm, gmsh_model_rank)
 gmsh.finalize()
 V = fem.functionspace(domain, ("Lagrange", 1, (domain.geometry.dim, )))
 
@@ -97,10 +99,9 @@ stress_expr = fem.Expression(von_Mises, V_von_mises.element.interpolation_points
 stresses = fem.Function(V_von_mises)
 stresses.interpolate(stress_expr)
 
-uh_magnitude = ufl.sqrt(ufl.dot(uh, uh))
 print('min/max uh:',
-      uh_magnitude.vector().array().min(),
-      uh_magnitude.vector().array().max())
+      np.min(np.abs(uh.x.array)),
+      np.max(np.abs(uh.x.array)))
 
 # saving
 with io.XDMFFile(domain.comm, "displacements.xdmf", "w") as xdmf:
