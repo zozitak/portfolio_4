@@ -24,15 +24,15 @@ Install everything else
 
 <h2>WORKFLOW</h2>
 
-1. Design Modell with cadquery
+<h3>1. Design Modell with cadquery</h3>
 
 <img src="/assets/cad.png">
 
-2. Mesh the Modell with Structured (Transfinite) Cubic Mesh
+<h3>2. Mesh the Modell with Structured (Transfinite) Cubic Mesh</h3>
 
 <img src="/assets/gmsh.png">
 
-3. Simulate Linear Elastic Beam based on https://fenicsproject.org/pub/tutorial/html/._ftut1008.html 
+<h3>3. Simulate Linear Elastic Beam based on https://fenicsproject.org/pub/tutorial/html/._ftut1008.html </h3>
 
        Scenario:
 
@@ -50,9 +50,9 @@ Install everything else
        deflect accordingly. Under an assumpation of small
        deformation the material follows linear elasticity.
 
-4. Analize with Paraview
+<h3>4. Analize with Paraview</h3>
 
 <img src="/assets/paraview.png">
 Maximum Displacement: 0.23813392114555948 unit
 </br>
-5. Save results in the STEP AP214 standard file format.
+<h3>5. Save results in the STEP AP214 standard file format.</h3>
