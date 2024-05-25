@@ -53,5 +53,6 @@ Install everything else
 4. Analize with Paraview
 
 <img src="/assets/paraview.png">
+Maximum Displacement: 0.23813392114555948 unit
 
 5. Save results in the STEP AP214 standard file format.
