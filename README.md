@@ -27,5 +27,22 @@ Install everything else
 1. Design Modell with cadquery
 2. Mesh the Modell with Structured (Transfinite) Cubic Mesh
 3. Simulate Linear Elastic Beam based on https://fenicsproject.org/pub/tutorial/html/._ftut1008.html 
+
+       Scenario:
+
+       A cantilever beam is clamped at one end
+
+                  .+------------------------+
+                .' |                      .'|
+               +---+--------------------+'  |  ↓ gravity
+       clamped |   |                    |   |
+               |  ,+--------------------+---+
+               |.'                      | .'
+               +------------------------+'
+
+       It is subject to the load due to its own weight and will
+       deflect accordingly. Under an assumpation of small
+       deformation the material follows linear elasticity.
+
 4. Analize with Paraview
 5. Save results in the STEP file
