@@ -54,4 +54,4 @@ Install everything else
 
 <img src="/assets/paraview.png">
 
-5. Save results in the STEP file
+5. Save results in the STEP AP214 standard file format.
