@@ -1,6 +1,10 @@
 
 <h1>CAD Design, Meshing, Simulation, Analysis as Code</h1>
 
+<h2>Introduction</h2>
+
+Demonstration of a text-based engineering workflow aimed at showcasing proper version control practices in engineering.
+
 <h2>CREATE YOUR VIRTUAL ENVIRONMENT</h2>
 
 Install conda on your system
