@@ -63,8 +63,8 @@ Maximum Displacement: 0.23813392114555948 unit
 
 Test: test_step_ap214_export ... FAIL
 
-Sadly based on Opencascade documentation (https://dev.opencascade.org/doc/occt-7.6.0/overview/html/occt_user_guides__step.html#autotoc_md254)
+Sadly based on Opencascade documentation (https://dev.opencascade.org/doc/occt-7.6.0/overview/html/occt_user_guides__step.html#autotoc_md254)</br>
 Opencascade doesnt export notes or custom data in any of the STEP formats. 
 
-For this purpose in the future either OCCT should be echanced or another CAD Kernel could be used.
+For this purpose in the future either OCCT should be echanced or another CAD Kernel could be used.</br>
 This Feature would be a great asset of future CAD Kernels. 
