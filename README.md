@@ -60,3 +60,11 @@ Install everything else
 Maximum Displacement: 0.23813392114555948 unit
 </br>
 <h3>5. Save results in the STEP AP214 standard file format.</h3>
+
+Test: test_step_ap214_export ... FAIL
+
+Sadly based on Opencascade documentation (https://dev.opencascade.org/doc/occt-7.6.0/overview/html/occt_user_guides__step.html#autotoc_md254)
+Opencascade doesnt export notes or custom data in any of the STEP formats. 
+
+For this purpose in the future either OCCT should be echanced or another CAD Kernel could be used.
+This Feature would be a great asset of future CAD Kernels. 
