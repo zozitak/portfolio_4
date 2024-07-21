@@ -68,3 +68,5 @@ Opencascade doesnt export notes or custom data in any of the STEP formats.
 
 For this purpose either OCCT should be echanced or another CAD Kernel could be used.</br>
 This Feature would be a great asset of future CAD Kernels. 
+
+Luckly OCCT 7.9 will have this feature.
