@@ -3,7 +3,7 @@
 
 <h2>Introduction</h2>
 
-Demonstration of a text-based engineering workflow aimed at showcasing proper version control practices in engineering.
+Demonstration of a text-based engineering workflow aimed at showcasing proper version control in practice.
 
 <h2>CREATE YOUR VIRTUAL ENVIRONMENT</h2>
 
